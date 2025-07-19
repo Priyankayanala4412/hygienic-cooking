@@ -1,44 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priya's Hygienic Recipes</title>
 
-    <title>form element</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-<label> user:</label>
 <body>
-    <h1> Welcome to priya's hygienic recipes</h1>
-    <a href="">
-        <button>
-            About
-        </button>
-    </a>
+  <header>
+    <h1>Welcome to Priya's hygienic recipes</h1>
+    <nav>
+      <button onclick="navigate('about')">About</button>
+      <button onclick="navigate('skills')">Skills</button>
+      <button onclick="navigate('project')">Project</button>
+      <button onclick="navigate('contact')">Contact me</button>
+    </nav>
+  </header>
 
-     <a href="">
-        <button>
-            Skills
-        </button>
-    </a>
-
-     <a href="">
-        <button>
-            Project
-        </button>
-    </a>
-
-     <a href="">
-        <button>
-            Contact me
-        </button>
-    </a>
-
-    <form>
-        <label>username</label>
+  <main>
+    <form id="contactForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter your name" />
+      <button type="submit">Submit</button>
     </form>
-<input type="radio" id "username">
+  </main>
 
- 
+  <!-- Link to JS -->
+  <script src="script.js"></script>
 </body>
 </html>
